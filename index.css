@@ -26,6 +26,21 @@ header img {
     align-items: center;
 }
 
+.background{
+    background-color: pink;
+    border-radius: 10px;
+}
+
+.background h1{
+    padding: 10px;
+}
+.background ul{
+    padding-bottom: 10px;
+}
+h1{
+    color: hsl(228, 45%, 44%); 
+}
+
 ol{
     margin: 0;
     padding: 0;
@@ -43,11 +58,21 @@ ol li::before{
     margin-right: 20px;
 
 }
-#bottom ul li{
+#bottom ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    padding: 2px 2px;
+    align-items: center;
+ 
     justify-content: space-around;
 
+}
+
+#bottom ul li{
+    word-spacing: 150px;
+}
+
+
+#bottom ul li{
+    
 }
