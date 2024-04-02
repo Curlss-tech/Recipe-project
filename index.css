@@ -22,6 +22,8 @@ header img {
     padding: 30px;
     margin: auto;
     display: flex;
+    flex-wrap:wrap;
+    overflow: hidden;
     flex-direction: column;
     align-items: center;
 }
@@ -68,11 +70,57 @@ ol li::before{
 
 }
 
-#bottom ul li{
+#bottom span{
     word-spacing: 150px;
 }
 
 
-#bottom ul li{
-    
+#hr{
+    border: none; 
+    border-top: 1px solid #ccc; 
+    margin: 20px; 
+  }
+
+.styled-table {
+    border-collapse: collapse; /* Collapse borders to ensure equal spacing */
+    width: 300px; /* Fixed width for the table */
 }
+
+.styled-table th, .styled-table td {
+    border: 1px solid black; 
+    padding: 10px; 
+    text-align: center; 
+    width: 50%; 
+}
+
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 800px){
+
+    body{
+        max-width: 150%;
+    }
+    .flex-container{
+        background-color: pink
+    }
+
+    .background{
+        background-color: white;
+    }
+}
+
+/* Media query for screens smaller than 400px */
+@media screen and (max-width: 400px) {
+   
+    body{
+        max-width: 75%;
+    }
+    .flex-container{
+        background-color: beige;
+    }
+
+    .background{
+        background-color: orange;
+    }
+}
+    
